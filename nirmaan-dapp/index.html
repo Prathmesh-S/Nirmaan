@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nirmaan DApp</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="loadDeployedAddress()">
+  <div id="app">
+    <header>
+      <h1>Nirmaan DApp</h1>
+    </header>
+
+    <section class="card">
+      <h2>🔗 Wallet Connection</h2>
+      <div class="row">
+        <button id="connectWalletBtn" onclick="connectWallet()">Connect / Reconnect Wallet</button>
+        <span id="walletAddress" class="status-text">Not connected</span>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>🛠 Contract Connection/Register Account</h2>
+      <div class="row">
+        <input id="contractAddress" type="text" placeholder="Contract Address">
+        <button  id="connectContractBtn" onclick="connectContract()">Connect to Contract</button>
+        <button id="registerBtn" onclick="register()">Register Current Wallet</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>👥 Check Registration</h2>
+      <div class="row">
+        <input id="checkAddress" type="text" placeholder="Wallet Address to Check">
+        <button id="checkRegisteredBtn" onclick="checkRegistered()">Check if Registered</button>
+      </div>
+      <div id="regStatus" class="status-box"></div>
+    </section>
+
+    <section class="card">
+      <h2>🏗 Employer Actions</h2>
+      <div class="row">
+        <input id="employeeAddress" type="text" placeholder="Employee Address">
+        <input id="tokenAddress" type="text" placeholder="Token Address">
+        <input id="numDays" type="text" placeholder="Number of Days">
+        <input id="dailyWage" type="text" placeholder="Daily Wage">
+        <button id="createContractBtn" onclick="createWorkContract()">Create Work Contract</button>
+      </div>
+      <div id="currentContractStatus" class="status-box"></div>
+    </section>
+
+    <section class="card">
+      <h2>🔨 Work Management</h2>
+      <div class="row">
+        <input id="contractId" type="number" placeholder="Contract ID">
+        <button id="verifyWorkBtn" onclick="verifyWork()">Employer: Verify Work</button>
+        <button id="raiseDisputeBtn" class="secondary" onclick="raiseDispute()">Employee: Raise Dispute</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>📃 Active Contracts</h2>
+      <button id="listContractsBtn" onclick="listContracts()">List All Contracts</button>
+      <div id="contractList"></div>
+    </section>
+  </div>
+  <script src="app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/ethers@6.6.2/dist/ethers.umd.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+{
+  "name": "final_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  "compile": "npx hardhat compile",
+  "test": "npx hardhat test",
+  "deploy": "npx hardhat run scripts/deploy.js --network localhost",
+  "full": "npm run compile && npm run test && npm run deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charlesli50/CS595_Final_Project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/charlesli50/CS595_Final_Project/issues"
+  },
+  "homepage": "https://github.com/charlesli50/CS595_Final_Project#readme",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.23.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.3.0"
+  }
+}
