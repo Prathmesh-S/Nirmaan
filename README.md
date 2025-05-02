@@ -78,8 +78,8 @@ Tested on:
 --- 
 
 ## Project Overview: 
-![Slide 1](slides/1.jpg)
-![Slide 2](slides/2.jpg)
-![Slide 3](slides/3.jpg)
-![Slide 4](slides/4.jpg)
-![Slide 5](slides/5.jpg)
+![Slide 1](Slides/1.jpg)
+![Slide 2](Slides/2.jpg)
+![Slide 3](Slides/3.jpg)
+![Slide 4](Slides/4.jpg)
+![Slide 5](Slides/5.jpg)
